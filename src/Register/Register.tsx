@@ -1,6 +1,8 @@
 import infinityLogo from '../assets/infinity.png';
 import devLinksLogo from '../assets/devlinks.png';
 import { Input } from '../Commons/Input';
+import EnvelopeSimples from '';
+import { EnvelopeSimple, LockKey } from 'phosphor-react';
 
 export function Register() {
   return (
@@ -18,28 +20,65 @@ export function Register() {
           </p>
         </div>
 
-        <form action="" className="flex flex-col w-full p-2 mt-[20px]">
+        <form action="" className="flex flex-col gap-2 w-full p-2 mt-[20px]">
           <label htmlFor="email">Email address</label>
-          <Input type="email" id="email" placeholder="e.g.alex@email.com" />
+          <div>
+            <Input
+              className="absolute pl-[40px]"
+              type="email"
+              id="email"
+              placeholder="e.g.alex@email.com"
+            />
+
+            <EnvelopeSimple
+              size={32}
+              weight="fill"
+              className="relative top-2.5 left-2 text-grey"
+            />
+          </div>
 
           <label className="mt-[24px]" htmlFor="password">
             Create password
           </label>
-          <Input
-            type="password"
-            id="password"
-            placeholder="At least 8 characters"
-          />
+
+          <div>
+            <Input
+              className="absolute pl-[40px]"
+              type="password"
+              id="password"
+              placeholder="At least 8 characters"
+            />
+
+            <LockKey
+              size={32}
+              weight="fill"
+              className="relative top-2.5 left-2 text-grey"
+            />
+          </div>
 
           <label className="mt-[24px]" htmlFor="password">
             Confirm password
           </label>
-          <Input
-            type="password"
-            id="password"
-            placeholder="At least 8 characters"
-          />
-          <p>Passwordmust contain at least 8 characters</p>
+
+          <div>
+            <Input
+              className="absolute pl-[40px]"
+              type="password"
+              id="password"
+              placeholder="At least 8 characters"
+            />
+
+            <LockKey
+              size={32}
+              weight="fill"
+              className="relative top-2.5 left-2 text-grey"
+            />
+          </div>
+
+          <p className="mt-6 text-grey">
+            Password must contain at least 8 characters
+          </p>
+
           <Input
             type="submit"
             value="Create new account"
@@ -48,7 +87,7 @@ export function Register() {
         </form>
 
         <p className="text-grey text-center mb-[20px]">
-          Already have an account?
+          Already have an account? {''}
           <a href="#" className="text-bg-submit">
             Login
           </a>
