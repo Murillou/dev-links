@@ -1,6 +1,5 @@
-import './App.css';
 import { Login } from './Login/Login';
 
-function App() {
+export function App() {
   return <Login />;
 }
