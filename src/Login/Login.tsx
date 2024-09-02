@@ -1,6 +1,6 @@
 import infinityLogo from '../assets/infinity.png';
 import devLinksLogo from '../assets/devlinks.png';
-// import { Input } from '../Commons/Input';
+import { Input } from '../Commons/Input';
 
 export function Login() {
   return (
