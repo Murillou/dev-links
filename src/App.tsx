@@ -1,11 +1,12 @@
-import { Login } from './Login/Login';
-import { Register } from './Register/Register';
+import { BrowserRouter } from 'react-router-dom';
+import { Router } from './Router/Router';
 
 export function App() {
   return (
     <>
-      {/* <Login /> */}
-      <Register />
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
     </>
   );
 }

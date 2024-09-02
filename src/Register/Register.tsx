@@ -1,8 +1,8 @@
 import infinityLogo from '../assets/infinity.png';
 import devLinksLogo from '../assets/devlinks.png';
 import { Input } from '../Commons/Input';
-import EnvelopeSimples from '';
 import { EnvelopeSimple, LockKey } from 'phosphor-react';
+import { NavLink } from 'react-router-dom';
 
 export function Register() {
   return (
@@ -88,9 +88,9 @@ export function Register() {
 
         <p className="text-grey text-center mb-[20px]">
           Already have an account? {''}
-          <a href="#" className="text-bg-submit">
+          <NavLink to="/" className="text-bg-submit">
             Login
-          </a>
+          </NavLink>
         </p>
       </section>
     </>

@@ -1,6 +1,8 @@
 import infinityLogo from '../assets/infinity.png';
 import devLinksLogo from '../assets/devlinks.png';
 import { Input } from '../Commons/Input';
+import { Register } from '../Register/Register';
+import { NavLink } from 'react-router-dom';
 
 export function Login() {
   return (
@@ -39,9 +41,9 @@ export function Login() {
 
         <p className="text-grey">
           Don't have an account?{' '}
-          <a href="#" className="text-bg-submit">
+          <NavLink to="register" className="text-bg-submit">
             Create account
-          </a>
+          </NavLink>
         </p>
       </section>
     </>
