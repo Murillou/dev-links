@@ -15,7 +15,8 @@ export function Input({
   placeholder,
   className: additionalClassName,
 }: inputProps) {
-  const baseClassName = ' w-full py-3 px-4 rounded-xl border-borders border-2';
+  const baseClassName =
+    ' w-full w-max-[396px] py-3 px-4 rounded-xl border-borders border-2';
   return (
     <input
       className={twMerge(baseClassName, additionalClassName)}
